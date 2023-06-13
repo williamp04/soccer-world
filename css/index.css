@@ -1,0 +1,331 @@
+:root{
+    --color-primario: #830cc4;
+    --color-secundario: #9a2edb;
+    --color-texto: #a63ae6;
+    --color-title: #282D31;
+    --color-fondo: #e5b3fe;
+    --color-sombras: #282D31;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    z-index: 50;
+    background-color: rgb(175, 108, 108);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header.logo{
+    position: relative;
+    max-width: 80px;
+    transition: 0.3s;
+}
+header.logo:hover{
+    transform: rotate(360deg);
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a {
+    display: inline-block;
+    color:#0f0f0f;
+    font-weight: 200;
+    margin-left: 50px;
+    text-decoration: none;
+    font-family: 'Fredoka';
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    
+}
+
+#search-input {
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+#search-button {
+    margin-left: 8px;
+    padding: 7px 15px;
+    background-color:rgba(70, 70, 70, 0.747);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: rgb(47, 39, 54);
+}
+
+body{
+    /* background-image: url(../img/banner-3.jpg); */
+    background-color: var(--color-fondo);
+    
+}
+
+
+
+/* inicio del header */
+header{
+    background-color: var(--color-fondo);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 4px 6px var(--color-sombras);
+    z-index: 999;
+    
+}
+
+.menu{
+    width: 90%;
+    margin: auto;
+    /* sirve para centrar el contenido */
+    display: flex;
+    /* fila  */
+    flex-direction: row;
+    /* que se coloque en fila, que se vea uno al costado del otro */
+    justify-content: space-between;
+    /* para qu haya un espacio (separacion) sea equitativo entre todos los elementos */
+    align-items: center;
+    /* centrado */
+}
+
+.menu .logo img{
+    /* conecta un elemento dentro de otro elemento */
+    height: 60px;
+    padding: 6px;
+}
+
+.menu .enlaces a{
+    margin-right: 1em;
+    color: var(--color-texto);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+/* fin header */
+/* inicio banner */
+.main-banner{
+    position: relative;
+    padding: 16em 15em;
+    background: linear-gradient(to right, rgba(227, 225, 231, 0.589), rgb(173, 139, 189));
+}
+
+@media screen and (max-width: 640px) {
+    .main-banner{
+        padding: 8em 6em;
+    }
+}
+
+.main-banner::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: color;
+    opacity: 0.4;
+}
+
+.img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    /* propiedad object-fit: cover permite recortar la imagen para que solo quede dentro de su contenedor */
+    opacity: 0.4;
+}
+
+.marco{
+    position: relative;
+    z-index: 100;
+    /* z-index permite colocar un contenido encima de la imagen */
+}
+
+.main-banner-data{
+    position: relative;
+    text-align: center;
+    
+}
+
+.titulo{
+    color: var(--color-primario);
+    font-size: 3em;
+    font-family: 'Fredoka';
+}
+
+@media screen and (max-width: 640px){
+    .titulo{
+        font-size: 1.5em;
+    }
+}
+
+.texto{
+    color: rgb(255, 255, 255);
+    font-size: .9em;
+    font-family: 'Roboto';
+}
+
+@media screen and (max-width: 640px){
+    .texto{
+        font-size: .5em;
+    }
+}
+
+.boton{
+    color: white;
+    background-color: #7d0c81;
+    padding: 0.7em;
+    border-radius: 0.5em;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 640px){
+    .boton{
+        font-size: 0.5em;
+        display: block;
+        margin-bottom: 0.5em;
+    }
+}
+
+.boton:hover{
+    color: white;
+}
+/* fin banner */
+
+/* inicio tarjetas */
+
+.cards-grid{
+    /* esta propiedad es para hacer mi propio sistema de rejillas */
+    display: grid;
+    /* esta propiedad nos permite dar separacion entre una colmuna o una fila, primero se debe colocar el display:grid */
+    gap: 1.5em;
+    /* con auto-fill cada una de las tarjetas se vuelve adaptable, con minmax se coloca el ancho de mi tarjeta*/
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.card{
+    background: #ffffff;
+    border-radius: .5em;
+    
+}
+.card-img{
+    width: 100%;
+}
+
+.card-content{
+    padding: 15px;
+    text-align: center;
+}
+
+.card-boton{
+    background-color: white;
+    padding: 5px 5px;
+    box-shadow: 1px 1px purple;
+    color: #7d0c81;
+    text-decoration: none;
+    border-radius: 0.3em;
+}
+
+.card-title{
+    font-size: 1em;
+    margin-bottom: 15px;
+    font-family: 'Roboto';
+    text-decoration: underline rgb(63, 63, 255);
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Fredoka';
+}
+
+.boton-final{
+    text-align: center;
+}
+
+.buton{
+    background-color: white;
+    padding: 8px 50px;
+    box-shadow: 1px 1px purple;
+    color: #7d0c81;
+    text-decoration: none;
+    border-radius: 0.3em;
+}
+
+/* fin tarjetas */
+
+/* boton flotante wsp */
+
+.wsp{
+    position: fixed;
+    margin-left: 1.5em;
+    border-radius: 100%;
+    padding: 2em;
+    color: #fff;
+    background-color: #25D366;
+    z-index: 100;
+}
+
+/* fin boton wsp */
+
+/* inicio footer */
+.container-f{
+    background-color: black;
+    padding: 2em ;
+    text-align: center;
+}
+
+i{
+    color: #fff;
+    font-size: 2em;
+}
+
+p{
+    color: #fff;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+.titulo-f{
+    color: #fff;
+    font-family: 'Fredoka';
+}
+
+.container-fo{
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+}
+
+span{
+    color: purple;
+    font-weight: bold;
+}
+
+.pa-f{
+    font-size: 0.8em;
+    
+}
+/* fin footer */
