@@ -1,6 +1,6 @@
 # [SOCCER-WORLD](https://williamp04.github.io/soccer-world/)
 
-[![William Alexander Pinto Gonzalez](https://i.postimg.cc/y8srFtfj/imagen-2023-06-13-115153612.png)](https://williamp04.github.io/soccer-world/)
+[![William Alexander Pinto Gonzalez](https://i.postimg.cc/rp4VPr7M/imagen-2023-06-26-071947692.png)](https://williamp04.github.io/soccer-world/)
 
 ## 📜 Resumen 📜
 La mejor Tienda para ropa deportiva,para los mejores en el futbol. 

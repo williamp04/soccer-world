@@ -1,0 +1,93 @@
+:root{
+    --color-primario: #830cc4;
+    --color-secundario: #9a2edb;
+    --color-texto: #a63ae6;
+    --color-title: #282D31;
+    --color-fondo: hsl(0, 0%, 98%);
+    --color-sombras: #282D31;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    z-index: 50;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header.logo{
+    position: relative;
+    max-width: 80px;
+    transition: 0.3s;
+}
+header.logo:hover{
+    transform: rotate(360deg);
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a {
+    display: inline-block;
+    color:#0f0f0f;
+    font-weight: 200;
+    margin-left: 50px;
+    text-decoration: none;
+    font-family: 'Fredoka';
+}
+/*fin del header*/
+
+
+/* boton flotante wsp */
+
+.wsp{
+    position: fixed;
+    margin-left: 1.5em;
+    border-radius: 100%;
+    padding: 2em;
+    color: #fff;
+    background-color: #25D366;
+    z-index: 100;
+}
+
+/* fin boton wsp */
+
+/* inicio footer */
+.container-f{
+    background-color: black;
+    padding: 2em ;
+    text-align: center;
+}
+
+i{
+    color: #fff;
+    font-size: 2em;
+}
+
+p{
+    color: #fff;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+.titulo-f{
+    color: #fff;
+    font-family: 'Fredoka';
+}
+
+.container-fo{
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+}
