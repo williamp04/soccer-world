@@ -1,6 +1,6 @@
 :root{
-    --color-primario: #830cc4;
-    --color-secundario: #992edb49;
+    --color-primario: #000000;
+    --color-secundario: #992edb4d;
     --color-texto: #a63ae6;
     --color-title: #282D31;
     --color-fondo: hsl(0, 0%, 98%);
@@ -148,7 +148,7 @@ body{
 .main-banner{
     position: relative;
     padding: 16em 15em;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.589), rgba(134, 82, 157, 0.681));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(135, 82, 157, 0.021));
 }
 
 @media screen and (max-width: 640px) {
@@ -204,7 +204,7 @@ body{
 }
 
 .texto{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: .9em;
     font-family: 'Roboto';
 }
