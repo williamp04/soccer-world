@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>polos-pantalones</title>
     <link rel="stylesheet" href="pp.css">
+    <style>
+        /*inicio del header con demas enlaces*/
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown:hover .dropdown__list {
+            opacity: 1;
+            pointer-events: initial;
+        }
+        
+        .dropdown__list {
+
+            background-color: #2A394F;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.25s;
+        }
+        /*fin del header con demas enlaces*/
+        .dropdown__list {
+            flex-direction: column;
+        }
+            
+    </style>
 </head>
 <body>
     <header>
@@ -17,10 +49,20 @@
                 </label>
                 <nav class="navbar">
                     <ul>
-                        <li><a href="#">inicio</a></li>
+                        <li><a href="../index.html">inicio</a></li>
                         <li><a href="#">servicios</a></li>
-                        <li><a href="#">productos</a></li>
-                        <li><a href="#">contactos</a></li>
+                        <li class="dropdown">
+                            <a href="#">Productos</a>
+                            <ul class="dropdown__list">
+                                <li>
+                                    <a  class="zapatillas_link">Polos</a>
+                                </li>
+                                <li>
+                                    <a  class="polos_link">Pantalones</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="../contactos.html">contactos</a></li>
                     </ul>
                 </nav>
             </div>
@@ -45,52 +87,52 @@
             </section>
         </section>
     </article>
-
+<br><br><br>
     <section id="zapatillas_section"><h2 class="subtitulo">POLOS</h2>
-        <br>
+        <br><br><br>
         <div class="container">
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-img">
-                        <img src="" alt="" class="img-fluid">                    
+                        <img src="./imagenes/polos/city.png" alt="" class="img-fluid" width="200">                    
                     </div>
     
                     <div class="card-content">
                         <h3 class="card-title">NIKE NEGRAS <br> MENZHENZU</h3>
-                        <a href="#" class="card-boton">Conocer más</a>
+                        <a href="#" class="card-boton">COMPRAR</a>
                     </div>
                 </div>
     
                 <div class="card">
                     <div class="card-img">
-                        <img src="" alt="" class="img-fluid">                    
+                        <img src="./imagenes/polos/dormund.png" alt="" class="img-fluid" width="200">                    
                     </div>
     
                     <div class="card-content">
                         <h3 class="card-title">TACHO AZUL <br> VBA 2022</h3>
-                        <a href="#" class="card-boton">Conocer más</a>
+                        <a href="#" class="card-boton">COMPRAR</a>
                     </div>
                 </div>
     
                 <div class="card">
                     <div class="card-img">
-                        <img src="" alt="" class="img-fluid">                    
+                        <img src="./imagenes/polos/japon.png" alt="" class="img-fluid" width="200">                    
                     </div>
     
                     <div class="card-content">
                         <h3 class="card-title">ZUMBRO NARANJAS <br> ZN 2021</h3>
-                        <a href="#" class="card-boton">Conocer más</a>
+                        <a href="#" class="card-boton">COMPRAR</a>
                     </div>
                 </div>
     
                 <div class="card">
                     <div class="card-img">
-                        <img src="" alt="" class="img-fluid">                    
+                        <img src="./imagenes/polos/liverpool.png" alt="" class="img-fluid" width="200">                    
                     </div>
     
                     <div class="card-content">
                         <h3 class="card-title">DEPORTIVAS BLANCAS <br> WOMEN</h3>
-                        <a href="#" class="card-boton">Conocer más</a>
+                        <a href="#" class="card-boton">COMPRAR</a>
                     </div>
                 </div>
     
@@ -102,45 +144,45 @@
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-img">
-                        <img src="" alt="" class="img-fluid">                    
+                        <img src="./imagenes/polos/psg.png" alt="" class="img-fluid" width="200">                    
                     </div>
     
                     <div class="card-content">
                         <h3 class="card-title">Z-PREDATOR <br> POWER BLANCA 2022</h3>
-                        <a href="#" class="card-boton">Conocer más</a>
+                        <a href="#" class="card-boton">COMPRAR</a>
                     </div>
                 </div>
     
                 <div class="card">
                     <div class="card-img">
-                        <img src="" alt="" class="img-fluid">                    
+                        <img src="./imagenes/polos/realmadrid.png" alt="" class="img-fluid" width="200">                    
                     </div>
     
                     <div class="card-content">
                         <h3 class="card-title">Z HUMBRO <br> 2022 </h3>
-                        <a href="#" class="card-boton">Conocer más</a>
+                        <a href="#" class="card-boton">COMPRAR</a>
                     </div>
                 </div>
     
                 <div class="card">
                     <div class="card-img">
-                        <img src="" alt="" class="img-fluid">                    
+                        <img src="./imagenes/polos/roma.png" alt="" class="img-fluid" width="200">                    
                     </div>
     
                     <div class="card-content">
                         <h3 class="card-title">ADDIDAS WHITE <br> 2019</h3>
-                        <a href="#" class="card-boton">Conocer más</a>
+                        <a href="#" class="card-boton">COMPRAR</a>
                     </div>
                 </div>
     
                 <div class="card">
                     <div class="card-img">
-                        <img src="" alt="" class="img-fluid">                    
+                        <img src="./imagenes/polos/united.png" alt="" class="img-fluid" width="200">                    
                     </div>
     
                     <div class="card-content">
                         <h3 class="card-title">POWER NEGRAS <br> WM 2022</h3>
-                        <a href="#" class="card-boton">Conocer más</a>
+                        <a href="#" class="card-boton">COMPRAR</a>
                     </div>
                 </div>
     
@@ -155,45 +197,45 @@
                 <div class="cards-grid">
                     <div class="card">
                         <div class="card-img">
-                            <img src="" alt="" class="img-fluid">                    
+                            <img src="./imagenes/pantalones/pan_italia.png" alt="" class="img-fluid" width="200">                    
                         </div>
         
                         <div class="card-content">
                             <h3 class="card-title">NIKE NEGRAS <br> MENZHENZU</h3>
-                            <a href="#" class="card-boton">Conocer más</a>
+                            <a href="#" class="card-boton">COMPRAR</a>
                         </div>
                     </div>
         
                     <div class="card">
                         <div class="card-img">
-                            <img src="" alt="" class="img-fluid">                    
+                            <img src="./imagenes/pantalones/pan_japon.png" alt="" class="img-fluid" width="200">                    
                         </div>
         
                         <div class="card-content">
                             <h3 class="card-title">TACHO AZUL <br> VBA 2022</h3>
-                            <a href="#" class="card-boton">Conocer más</a>
+                            <a href="#" class="card-boton">COMPRAR</a>
                         </div>
                     </div>
         
                     <div class="card">
                         <div class="card-img">
-                            <img src="" alt="" class="img-fluid">                    
+                            <img src="./imagenes/pantalones/pan_liverpool.png" alt="" class="img-fluid" width="200">                    
                         </div>
         
                         <div class="card-content">
                             <h3 class="card-title">ZUMBRO NARANJAS <br> ZN 2021</h3>
-                            <a href="#" class="card-boton">Conocer más</a>
+                            <a href="#" class="card-boton">COMPRAR</a>
                         </div>
                     </div>
         
                     <div class="card">
                         <div class="card-img">
-                            <img src="" alt="" class="img-fluid">                    
+                            <img src="./imagenes/pantalones/pan_racing.png" alt="" class="img-fluid" width="200">                    
                         </div>
         
                         <div class="card-content">
                             <h3 class="card-title">DEPORTIVAS BLANCAS <br> WOMEN</h3>
-                            <a href="#" class="card-boton">Conocer más</a>
+                            <a href="#" class="card-boton">COMPRAR</a>
                         </div>
                     </div>
         
@@ -205,45 +247,45 @@
                 <div class="cards-grid">
                     <div class="card">
                         <div class="card-img">
-                            <img src="" alt="" class="img-fluid">                    
+                            <img src="./imagenes/pantalones/pan_real.png" alt="" class="img-fluid" width="200">                    
                         </div>
         
                         <div class="card-content">
                             <h3 class="card-title">Z-PREDATOR <br> POWER BLANCA 2022</h3>
-                            <a href="#" class="card-boton">Conocer más</a>
+                            <a href="#" class="card-boton">COMPRAR</a>
                         </div>
                     </div>
         
                     <div class="card">
                         <div class="card-img">
-                            <img src="" alt="" class="img-fluid">                    
+                            <img src="./imagenes/pantalones/pan_united.png" alt="" class="img-fluid" width="200">                    
                         </div>
         
                         <div class="card-content">
                             <h3 class="card-title">Z HUMBRO <br> 2022 </h3>
-                            <a href="#" class="card-boton">Conocer más</a>
+                            <a href="#" class="card-boton">COMPRAR</a>
                         </div>
                     </div>
         
                     <div class="card">
                         <div class="card-img">
-                            <img src="" alt="" class="img-fluid">                    
+                            <img src="./imagenes/pantalones/pan_uruguay (1).png" alt="" class="img-fluid" width="200">                    
                         </div>
         
                         <div class="card-content">
                             <h3 class="card-title">ADDIDAS WHITE <br> 2019</h3>
-                            <a href="#" class="card-boton">Conocer más</a>
+                            <a href="#" class="card-boton">COMPRAR</a>
                         </div>
                     </div>
         
                     <div class="card">
                         <div class="card-img">
-                            <img src="" alt="" class="img-fluid">                    
+                            <img src="./imagenes/pantalones/pan_uruguay.png" alt="" class="img-fluid" width="200">                    
                         </div>
         
                         <div class="card-content">
                             <h3 class="card-title">POWER NEGRAS <br> WM 2022</h3>
-                            <a href="#" class="card-boton">Conocer más</a>
+                            <a href="#" class="card-boton">COMPRAR</a>
                         </div>
                     </div>
         
