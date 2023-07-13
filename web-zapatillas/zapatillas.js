@@ -1,38 +1,15 @@
 window.onload = () => {
     var zapatillas_section = document.getElementById("zapatillas_section").getBoundingClientRect();
-    var polos_section = document.getElementById("polos_section").getBoundingClientRect();
-    var promos_section = document.getElementById("promos_section").getBoundingClientRect();
-    var search_button = document.getElementById("search-button");
-    
-    const zapatillas_link = document.querySelectorAll(".zapatillas_link");
-    const polos_link = document.querySelector(".polos_link");
-    const promos_link = document.querySelector(".promos_link");
-    
-    for (var i = 0; i < zapatillas_link.length; i++) {
-        zapatillas_link[i].addEventListener("click", () => changescroll(zapatillas_section));
-    }
-    promos_link.addEventListener("click", () => changescroll(promos_section));
-    polos_link.addEventListener("click", () => changescroll(polos_section));
-    search_button.addEventListener("click",() => searchscroll());
-    
-    function searchscroll(){
-        var search_input = document.getElementById("search-input").value;
-        console.log(search_input)
-        //search_input = search_input.toLowerCase();
-        if(search_input == "zapatillas"){
-           // zapatillas_section = document.getElementById("zapatillas_section").getBoundingClientRect();
-            changescroll(zapatillas_section)
-        }else if(search_input == "polos"){
-            //polos_section = document.getElementById("polos_section").getBoundingClientRect();
-            changescroll(polos_section)
-        }else if(search_input == "promos"){
-            //promos_section = document.getElementById("promos_section").getBoundingClientRect();
-            changescroll(promos_section)
-        }
-    }
+    var tachos_section = document.getElementById("tachos_section").getBoundingClientRect();
 
-    function changescroll(danna){
-        window.scroll({top:(danna.y - 150)})
-        console.log(danna.y)
+    const zapatillas_link = document.querySelector(".zapatillas_link");
+    const tachos_link = document.querySelector(".tachos_link");
+
+    zapatillas_link.addEventListener("click", () => changescroll(zapatillas_section));
+    tachos_link.addEventListener("click", () => changescroll(tachos_section));
+
+    function changescroll (zamora){
+        window.scroll({top:(zamora.y )})
+        console.log(zamora)
     }
 }
